@@ -22,7 +22,7 @@ const prodOutput = {
   clean: true,
   chunkFilename: 'src/js/[name].js',
   filename: 'src/js/[name].js',
-  assetModuleFilename: '[path]/[name].[ext]'
+  assetModuleFilename: '[path]/[name][ext]'
 }
 
 module.exports = {
