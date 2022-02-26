@@ -14,17 +14,13 @@ block styles
       -webkit-text-size-adjust: none
     }
 
-    .list-articles a {
-      text-decoration: none;
-      color: #000000;
-      font-size: 16px;
-      line-height: 19px;
+    img {
+      display: block;
+      margin: 0 auto;
     }
 
-    .footer a,
-    .footer p {
-      font-size: 11px;
-      line-height: 24px;
+    .list-articles a {
+      text-decoration: none;
     }
 
     .footer-nav td {
@@ -58,22 +54,22 @@ block content
               //- блок в две колонки (2x вложенность)
               table(width="100%" style='max-width: 600px' align="center" cellspacing="0" cellpadding="0")
                 tr
-                  td(style="text-align: center; word-spacing: 5px;")
+                  td(style="text-align: center;")
                     //- block list artickles (3x вложенность)
-                    div(style='display:inline-block; word-spacing: 0; padding-top: 5px; padding-bottom: 5px')
+                    div(style='display:inline-block;padding-top:5px; padding-bottom:5px; padding-left:2.5px; padding-right:2.5px')
                       include ../components/list-articles/list-articles.pug
                     //- commercial block (3x вложенность)
-                    div(style='display:inline-block; word-spacing: 0; padding-top: 5px; padding-bottom: 5px')
-                      table(width='300px' height='246px;')
+                    div(style='display:inline-block;padding-top:5px; padding-bottom:5px; padding-left:2.5px; padding-right:2.5px')
+                      table(width='300px')
                         tr 
-                          td(bgcolor="#000000")
+                          td(bgcolor="#000000" height='248px')
           tr
             td 
               //- кнопка full width
               table(width="100%" style='max-width: 600px' align="center" cellspacing="0" cellpadding="0")
                 tr
                   td(style="padding-top: 30px; padding-bottom: 30px;")
-                    a(href="#" width="100%" 
+                    a(href="#" 
                       style=`display: block; border: 1px; border-color: #f5d434; border-style: solid; border-radius: 21px; 
                             text-decoration: none; text-align: center; color:#000000; font-size: 16px; line-height: 40px;
                             padding-left: 15px; padding-right: 15px;`

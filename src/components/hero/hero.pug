@@ -1,5 +1,5 @@
-div(width='100%' style="max-width: 598px; border-width: 1px; border-color: #ebebeb; border-style: solid; border-radius: 5px; background-color: #f8f8f8;")
-  table(width='100%' style="max-width: 600px;" cellspacing="0" cellpadding="0" align="center")
+div(style="width: 100%; max-width: 598px; border-width: 1px; border-color: #ebebeb; border-style: solid; border-radius: 5px; background-color: #f8f8f8;")
+  table(width='100%' style="max-width: 600px;" cellspacing="0" cellpadding="0" align="center" border='0')
     tr
       td
         //- hero image
@@ -23,7 +23,9 @@ div(width='100%' style="max-width: 598px; border-width: 1px; border-color: #ebeb
                   font-size: 12.5px; color: #000000; text-decoration: none; line-height: 26px; text-align: center;`
               )
                 //- img(src=require('Images/icon/heart-2x.png') alt='icon heart' width='14' height='14' style='vertical-align: text-bottom; margin-right: 10px')
-                img(src='https://raw.githubusercontent.com/pavllovic/email/main/src/images/icon/heart-2x.png' alt='icon heart' width='14' height='14' style='vertical-align: text-bottom; margin-right: 10px')
+                img(src='https://raw.githubusercontent.com/pavllovic/email/main/src/images/icon/heart-2x.png' alt='icon heart' width='14' height='14' 
+                  style='display: inline-block; vertical-align: text-bottom; margin-right: 10px'
+                )
                 | Add to Recipe Box
     //- padding-bottom
     tr
